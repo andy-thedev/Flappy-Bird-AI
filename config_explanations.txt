@@ -1,0 +1,96 @@
+FROM DOCUMENTATION: https://neat-python.readthedocs.io/en/latest/config_file.html
+ASSOCIATED ARTICLE: http://nn.cs.utexas.edu/downloads/papers/stanley.cec02.pdf
+[NEAT]
+# Criterion for deciding "best birds"
+fitness_criterion     = max
+# The fitness score we wish to reach before terminating the NEAT program
+fitness_threshold     = 100
+# Setting the pop_size to a large number for such a simple game, such as flappy bird actually generates almost all
+# of the possibilities of a neural network structure, that one or more seems to be fit for perfectly running the
+# task on the first generation. We may observe neural network evolution by setting it to a low number.
+pop_size              = 20
+reset_on_extinction   = False
+
+# Genome: Population members
+# Properties: input nodes/output nodes/etc. Genes: Connections between the nodes
+[DefaultGenome]
+# node activation options
+# Activation function
+activation_default      = tanh
+# Set > 0 if wish to randomly change activation function as procedure progresses
+activation_mutate_rate  = 0.0
+# Options that activation function randomly changes from if above statement > 0
+activation_options      = tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.0
+aggregation_options     = sum
+
+# node bias options
+bias_init_mean          = 0.0
+bias_init_stdev         = 1.0
+bias_max_value          = 30.0
+bias_min_value          = -30.0
+# How likely the above properties will change with new populations
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.5
+conn_delete_prob        = 0.5
+
+# connection enable options
+# We may have connections that are enabled or not enabled
+enabled_default         = True
+enabled_mutate_rate     = 0.01
+
+feed_forward            = True
+# Fully connected dense layers
+initial_connection      = full
+
+# node add/remove rates
+node_add_prob           = 0.2
+node_delete_prob        = 0.2
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 3
+num_outputs             = 1
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.0
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.0
+response_mutate_rate    = 0.0
+response_replace_rate   = 0.0
+
+# connection weight options
+weight_init_mean        = 0.0
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 3.0
+
+[DefaultStagnation]
+species_fitness_func = max
+# How mnay generations we go without increasing fitness
+# If max fitness does not increase after 20 generations, we terminate
+max_stagnation       = 20
+species_elitism      = 2
+
+[DefaultReproduction]
+elitism            = 2
+survival_threshold = 0.2
