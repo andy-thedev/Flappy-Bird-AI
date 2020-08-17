@@ -19,3 +19,5 @@ FBIRD.py -> The main algorithm (Game, and neural network implementations)
 Libraries Utilized: pygame, neat, os, random
 
 Outcome: "Perfect bird" achieved in max. 4 generations, each generation with population size 20. Resulting bird survived 48 hours without collision
+
+Reference: https://github.com/techwithtim/NEAT-Flappy-Bird
