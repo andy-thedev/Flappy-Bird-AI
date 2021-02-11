@@ -1,6 +1,6 @@
 A repository containing an implementation of the game, "Flappy Bird", and an AI that perfects the game using neural networks.
 
-(READ) Full-length descriptions and visual demonstration of the project: https://www.wontaejungportfolio.com/portfolio-item1.html#project1
+(READ) Full-length descriptions and visual demonstration of the project: https://www.wontaejungportfolio.com/mywork
 
 Intro:
 
