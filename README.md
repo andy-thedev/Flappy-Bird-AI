@@ -7,7 +7,7 @@ A repository containing an implementation of the game, "Flappy Bird", and an AI 
 Language: Python  
 Libraries: pygame, neat, os, random
 
-## Intro:
+## Intro
 
 "Flappy Bird" is a side-scrolling game released in 2013, where the player controls a bird, and attempts to fly between green pipes without hitting them.
 
@@ -15,7 +15,7 @@ Despite its simplistic mechanic and design, the game is renown for its high leve
 
 In this project, I recreated "Flappy Bird", and developed an AI algorithm that learns how to progress through the game endlessly, utilizing neural networks.
 
-## /:
+## /
 
 **config-feedforward.txt:**  
 The feedforward specifications, for utilizing the NEAT algorithm
