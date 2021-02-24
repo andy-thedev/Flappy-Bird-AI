@@ -5,6 +5,7 @@ A repository containing an implementation of the game, "Flappy Bird", and an AI 
 (READ) **Full-length descriptions** and **visual demonstration** of the project: https://www.wontaejungportfolio.com/mywork
 
 Language: Python
+
 Libraries: pygame, neat, os, random
 
 ## Intro:
