@@ -1,6 +1,8 @@
 # Flappy Bird AI
 **Full-length descriptions** and **visual demonstration** of the project: https://www.wontaejungportfolio.com/mywork
 
+## Credit: https://github.com/techwithtim
+
 A repository containing an implementation of the game, "Flappy Bird", and an AI that perfects the game using neural networks.
 
 Language: Python  
